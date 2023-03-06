@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Program Kalkulator</title>
+    </head>
+    <body>
+        <script languages = "JavaScript">
+            function tambah()
+            {
+                var val1= parseFloat(document.kalkulator.B1. value);
+                var val2= parseFloat(document.kalkulator.B2. value);
+                var hasil= val1 + val2;
+                document.kalkulator.hasiljumlah.value = hasil;
+            }
+            function kurang()
+            {
+                var val1= parseFloat(document.kalkulator.B1. value);
+                var val2= parseFloat(document.kalkulator.B2. value);
+                var hasil= val1 - val2;
+                document.kalkulator.hasiljumlah.value = hasil;
+            }
+            function kali()
+            {
+                var val1= parseFloat(document.kalkulator.B1. value);
+                var val2= parseFloat(document.kalkulator.B2. value);
+                var hasil= val1 * val2;
+                document.kalkulator.hasiljumlah.value = hasil;
+            }
+            function bagi()
+            {
+                var val1= parseFloat(document.kalkulator.B1. value);
+                var val2= parseFloat(document.kalkulator.B2. value);
+                var hasil= val1 / val2;
+                document.kalkulator.hasiljumlah.value = hasil;
+            }
+            document.write("Dimodifikasi terakhir pada "+document.lastModified)
+        </script>
+        <form name="kalkulator">
+            <h1> Program Kalkulator Sederhana </h1>
+            <p>
+                <p>Bilangan Pertama: <input type="text" name=B1> <br></p>
+                <p>Bilangan Kedua  : <input type="text" name=B2> <br> </p>
+                <p>Hasil Operasi   : <input type="text" name=hasiljumlah disabled> <br> </p>
+            </p>
+        <input type="button" value="+" onclick=tambah()>
+        <input type="button" value="-" onclick=kurang()>
+        <input type="button" value="x" onclick=kali()>
+        <input type="button" value=":" onclick=bagi()>
+        <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
